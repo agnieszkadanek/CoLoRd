@@ -15,7 +15,7 @@ else
 	CFLAGS = -Wall -O3 -std=c++17 -static -Wl,--whole-archive -lstdc++fs -lpthread -Wl,--no-whole-archive
 	CLINK = -Wall -O3 -std=c++17 -static -Wl,--whole-archive -lstdc++fs -lpthread -Wl,--no-whole-archive	
 
-	CFLAGS_KMC = -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11
+	CFLAGS_KMC = -Wall -O3 -m64 -static-libgcc -static-libstdc++ -fopenmp -pthread -std=c++11 -lrt
 	CLINK_KMC = -lm -fopenmp -static-libgcc -static-libstdc++ -O3 -pthread -std=c++11
 endif
 
